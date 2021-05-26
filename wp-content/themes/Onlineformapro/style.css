@@ -14,12 +14,14 @@ html{
 }
 
 body{
-    background-color: #0a4b78;
+    background-image: url("https://images.pexels.com/photos/3038740/pexels-photo-3038740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
     font-family: 'Odibee Sans', cursive;
 }
 
 a{
     color: #00a699;
+    text-decoration: none;
 }
 a:hover{
     color: brown;
@@ -39,4 +41,25 @@ ul li{
     margin: 0 10px 0 0px;
     text-decoration: none;
     color: #333333;
+}
+.menu-item, .menu-item-type-post_type, .menu-item-object-post{
+    font-size: 24px!important;
+    color: wheat!important;
+    margin-right: 20px;
+}
+/*************************CARTE*****************************/
+.card{
+    height: 100%!important;
+}
+
+/**************************PAGINATION********************/
+.page-numbers{
+    background-color: white;
+    padding: 10px;
+    border-left:1px solid #2c3338 ;
+}
+/***************************SINGLE PAGE***********************/
+.single-post{
+    background-color: white;
+    padding: 20px;
 }

@@ -12,7 +12,7 @@ if (have_posts()) {
             the_post();
             ?>
             <div class="col-md-4 col-sm-12">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <p class="card-img-top"><?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'style' => 'width:100%']) ?></p>
                     <div class="card-body">
                         <h5 class="card-title"><?php the_title() ?></h5>
@@ -27,7 +27,7 @@ if (have_posts()) {
 
     </div>
     <nav aria-label="Page navigation example">
-        <ul class="pagination">
+        <ul class="pagination mt-3">
            <?= paginate_links() ?>
         </ul>
     </nav>
