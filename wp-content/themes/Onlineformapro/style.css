@@ -16,7 +16,9 @@ html{
 body{
     background-image: url("https://images.pexels.com/photos/3038740/pexels-photo-3038740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size: cover;
-    font-family: 'Odibee Sans', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #2e4453!important;
 }
 
 a{
@@ -37,19 +39,27 @@ ul li{
 }
 #primary-menu a{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 10px 0 0px;
     text-decoration: none;
     color: #333333;
 }
 .menu-item, .menu-item-type-post_type, .menu-item-object-post{
-    font-size: 24px!important;
+    font-size: 20px!important;
     color: wheat!important;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.logo{
+    margin-left: 20px;
+}
+.search-form{
     margin-right: 20px;
 }
 /*************************CARTE*****************************/
 .card{
     height: 100%!important;
+    padding: 20px;
 }
 
 /**************************PAGINATION********************/
@@ -62,4 +72,42 @@ ul li{
 .single-post{
     background-color: white;
     padding: 20px;
+}
+/*************************COMMENTAIRE*************************/
+.comment-reply-link{
+    background-color: #d83441;
+    padding: 10px;
+    color: white;!important;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.comment-reply-link:hover{
+    color: orange;!important;
+    background-color: #0a4b78;
+}
+.comment-body{
+    height: 150px;
+}
+#comment{
+    width: 100%!important;
+}
+#form-submit, #submit{
+    background-color: #d83441;
+    padding: 10px;
+    color: white;!important;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+#form-submit, #submit:hover{
+    color: orange;!important;
+    background-color: #0a4b78;
+}
+
+/**********************FOOTER*********************/
+#the_footer{
+    background-color: white;
+    width: 100%!important;
+    padding: 20px;
+
 }

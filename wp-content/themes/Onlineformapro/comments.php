@@ -13,7 +13,7 @@
                     //Options
                     'style' => 'ol',
                     'short_ping' => true,
-                    'avatar_size' => 74
+                    'avatar_size' => 25
                 ])
             ?>
         </ol>

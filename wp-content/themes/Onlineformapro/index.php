@@ -1,6 +1,7 @@
 <?php
 get_header();
 //La boucle wordpress
+//LES SOURCES : https://capitainewp.io/formations/developper-theme-wordpress/conditional-tags
 //Si on a des articles
 if (have_posts()) {
     ?>
@@ -15,9 +16,13 @@ if (have_posts()) {
                 <div class="card">
                     <p class="card-img-top"><?php the_post_thumbnail('post-thumbnail', ['class' => 'img-fluid', 'style' => 'width:100%']) ?></p>
                     <div class="card-body">
-                        <h5 class="card-title"><?php the_title() ?></h5>
+
                         <p class="card-text"><?php the_content(); ?></p>
-                        <a href="<?php the_permalink(); ?>" class="btn btn-primary">Plus d'infos</a>
+                        <p style="color: #0a4b78" class="post__meta">
+                            Publié le : <?php the_time(get_option('date_format')); ?>
+                            par : <?php the_author() ?>
+                        </p>
+                        <a href="<?php the_permalink(); ?>" class="btn btn-warning">Plus d'infos</a>
                     </div>
                 </div>
             </div>
@@ -28,6 +33,7 @@ if (have_posts()) {
     </div>
     <nav aria-label="Page navigation example">
         <ul class="pagination mt-3">
+            <!--Pagination a regeler deans le dashboard regale -> general -> nombre article a fficher par page-->
            <?= paginate_links() ?>
         </ul>
     </nav>
